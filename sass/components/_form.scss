@@ -1,0 +1,60 @@
+.footer-form__box {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+.footer-form__mail-box {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 70px;
+
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: inherit;
+  color: var(--primary-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.footer-form__label {
+  display: inline-block;
+  width: 358px;
+}
+
+.footer-form__button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background-color: var(--accent-text-color);
+  color: var(--primary-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-form__send {
+  width: 24px;
+  height: 24px;
+
+  margin-right: 13px;
+  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.footer-form__svg {
+  fill: var(--primary-bg-color);
+}

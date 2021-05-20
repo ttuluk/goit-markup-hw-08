@@ -1,0 +1,28 @@
+.section__team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: var(--secondary-text-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--secondary-card-shadow);
+}
+
+.team__card {
+  padding: 30px;
+}
+.team__title {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}

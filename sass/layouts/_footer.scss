@@ -1,0 +1,27 @@
+.footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--footer-bg-color);
+  color: var(--secondary-text-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__box {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.footer__adress-box {
+  display: flex;
+  flex-direction: column;
+  width: 231px;
+}
+
+.footer__text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}

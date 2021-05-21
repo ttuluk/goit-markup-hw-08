@@ -32,6 +32,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 body {
@@ -67,8 +68,7 @@ p {
   transition: color var(--animation);
 }
 
-.link:hover,
-.link:focus {
+.link:hover, .link:focus {
   color: var(--accent-text-color);
   cursor: pointer;
 }
@@ -80,11 +80,32 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    background-color: forestgreen;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    background-color: gold;
+  }
 }
 
 .link-logo {
@@ -239,8 +260,7 @@ p {
 }
 
 .overlay {
-  background-image: url(../images/background/img-overlay.png),
-    url(../images/background/background.jpg);
+  background-image: url(../images/background/img-overlay.png), url(../images/background/background.jpg);
   max-width: 1600px;
   min-height: 600px;
   background-repeat: no-repeat;
@@ -487,8 +507,7 @@ p {
   color: inherit;
   padding: 10px 30px;
   letter-spacing: 0.06em;
-  transition: background-color var(--animation) color var(--animation)
-    box-shadow var(--animation);
+  transition: background-color var(--animation) color var(--animation) box-shadow var(--animation);
 }
 
 .hero__button {
@@ -506,8 +525,7 @@ p {
   transition: background-color var(--animation);
 }
 
-.hero__button:hover,
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: var(--accent-text-color);
   cursor: pointer;
 }
@@ -524,8 +542,7 @@ p {
   border-radius: 4px;
 }
 
-.form__button:hover,
-.form__button:focus {
+.form__button:hover, .form__button:focus {
   background-color: var(--accent-button-color);
   cursor: pointer;
 }
@@ -542,12 +559,10 @@ p {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  transition: background-color var(--animation), color var(--animation),
-    box-shadow var(--animation);
+  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
 }
 
-.filter__button:hover,
-.filter__button:focus {
+.filter__button:hover, .filter__button:focus {
   background-color: var(--accent-text-color);
   color: var(--secondary-text-color);
   cursor: pointer;
@@ -701,8 +716,7 @@ p {
   transition: background-color var(--animation);
 }
 
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-text-color);
   transition: background-color var(--animation);
 }
@@ -766,8 +780,7 @@ p {
   transition: border-color var(--animation);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--accent-text-color);
 }
 
@@ -892,8 +905,7 @@ p {
 .filter--all {
   background-color: var(--accent-text-color);
   color: var(--secondary-text-color);
-  transition: background-color var(--animation) color var(--animation)
-    box-shadow var(--animation);
+  transition: background-color var(--animation) color var(--animation) box-shadow var(--animation);
 }
 
 .galery {
@@ -917,8 +929,7 @@ p {
   transition: box-shadow var(--animation);
 }
 
-.card:hover,
-.card:focus {
+.card:hover, .card:focus {
   box-shadow: var(--prime-card-swadow);
 }
 
@@ -947,6 +958,7 @@ p {
   color: var(--title-text-color);
 }
 
+/*overlay-portfolio*/
 .card__image-box {
   position: relative;
   top: 0;

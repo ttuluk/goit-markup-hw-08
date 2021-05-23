@@ -32,7 +32,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid red;
+  outline: 1px solid palegreen;
 }
 
 body {
@@ -96,22 +96,75 @@ p {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
+    background-color: palevioletred;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    background-color: forestgreen;
+    background-color: peru;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    background-color: gold;
+    background-color: rebeccapurple;
   }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 726px;
+  background-color: var(--primery-bg-color);
+  z-index: 99;
+}
+
+.mobile-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+
+.mobile-btn__icon {
+  width: 24px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  fill: var(--title-text-color);
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.mobile-btn__close {
+  display: none;
+}
+
+.mobile-btn.is-open .mobile-btn__close {
+  display: block;
+}
+
+.mobile-btn.is-open .mobile-btn__menu {
+  display: none;
 }
 
 .link-logo {
@@ -147,6 +200,12 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.99px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav--list {
@@ -195,6 +254,18 @@ p {
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767.99px) {
+  .auth-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  .auth-nav {
+    display: block;
+  }
+}
+
 .auth-nav--list {
   margin-left: auto;
 }
@@ -203,8 +274,10 @@ p {
   display: flex;
 }
 
-.auth-nav .item + .item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .auth-nav .item + .item {
+    margin-left: 50px;
+  }
 }
 
 .auth-nav__link {
@@ -212,6 +285,13 @@ p {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  .auth-nav__link {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .auth-nav__icon {
@@ -231,6 +311,7 @@ p {
 }
 
 .header-block {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;

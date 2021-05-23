@@ -7,14 +7,15 @@
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
+
+    background-color: palevioletred;
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    background-color: forestgreen;
+    background-color: peru;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    background-color: gold;
+    background-color: rebeccapurple;
   }
 }

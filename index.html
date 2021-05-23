@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/main.css">
 <body>
 
-    <!--Шапка сайта-->
-    <!--<header  class="page-header">
+  
+    <header  class="page-header">
 
         <div class="container header-block">
         <nav class="nav page-header__nav">
@@ -42,10 +42,45 @@
                 <use href="./images/icons/icon.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a></li>
         </ul>
+    
+        <button data-menu-button class="mobile-btn is-open" type="button" aria-expanded="false">
+            <svg class="mobile-btn__icon" aria-label="Переключатель мобильного меню">
+                <use class="mobile-btn__menu" href="./images/icons/icon.svg#icon-menu"></use>
+                <use class="mobile-btn__close" href="./images/icons/icon.svg#icon-close"></use>
+            </svg>
+
+        </button>
+        
         </div>
+        
+    </header>
+</div>
+        <div class="mobile-menu">
+            <div  class="">
+               <ul class="list site-nav site-nav--list mobile-menu__list-site">
+                <li class="item site-nav__item mobile-menu__item-site">
+                    <a class="link site-nav__link link--current mobile-menu__link-site" href="./index.html">Студия</a>
+                </li>
+                <li class="item site-nav__item mobile-menu__item-site">
+                    <a class="link site-nav__link mobile-menu__link-site" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="item site-nav__item mobile-menu__item-site">
+                    <a class="link site-nav__link mobile-menu__link-site" href="">Контакты</a>
+                </li>
+            </ul> 
 
-    </header>-->
+            <ul class="list auth-nav auth-nav--list mobile-menu__list-auth">
+            <li class="item auth-nav__item mobile-menu__item-auth"><a class="link auth-nav__link mobile-menu__link-auth" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item auth-nav__item mobile-menu__item-auth"><a class="link auth-nav__link mobile-menu__link-auth" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
 
+            <ul class="social list social--list mobile-menu__social">
+                        <li class="social__item item"><a class="social__link" href="">Instagram</a></li>
+                        <li class="social__item item"><a class="social__link" href="">Twitter</a></li>
+                        <li class="social__item item"><a class="social__link" href="">Facebook</a></li>
+                        <li class="social__item item"><a class="social__link" href="">LinkedIn</a></li>
+                    </ul>
+            </div>
     <main>
             <section class="hero overlay hero--center">
                 <div class="container hero__container">

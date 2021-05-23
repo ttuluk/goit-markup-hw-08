@@ -1,15 +1,33 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: -30px;
+  margin-left: -30px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__item {
   display: flex;
+  margin-top: 30px;
   margin-left: 30px;
+  flex-basis: 100%;
 
-  &:first-child {
-    margin-left: 0;
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 30px * 2) / 2);
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    &:first-child {
+      margin-left: 0;
+    }
+    flex-wrap: nowrap;
   }
 }
 
@@ -17,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  min-width: 170px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -30,6 +48,9 @@
   &:hover .clients__svg,
   &:focus .clients__svg {
     fill: var(--accent-text-color);
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
   }
 }
 

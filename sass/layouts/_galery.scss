@@ -1,12 +1,20 @@
-.galery {
-  flex-basis: calc((100% - 3 * 30px) / 3);
-}
-
 .galery__item {
-  display: flex;
-  margin-left: 30px;
-  margin-top: 30px;
   cursor: pointer;
+  margin-top: 30px;
+  margin-left: 30px;
+
+  @media screen and (min-width: 480px) and (max-width: 767.99px) {
+    justify-content: center;
+    flex-basis: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .card {

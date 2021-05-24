@@ -52,34 +52,42 @@
         </button>
         
         </div>
-        
-    </header>
-</div>
-        <div class="mobile-menu">
-            <div  class="">
-               <ul class="list site-nav site-nav--list mobile-menu__list-site">
-                <li class="item site-nav__item mobile-menu__item-site">
-                    <a class="link site-nav__link link--current mobile-menu__link-site" href="./index.html">Студия</a>
+            </header>
+            
+            <div data-menu class="mobile-menu is-open">
+            <div  class="mobile-menu__box">
+               
+                <div  class="mobile-menu__site-box">
+               <ul class="list mobile-menu__list-site">
+                <li class="item mobile-menu__item-site">
+                    <a class="link mobile-menu__link-site link--current" href="./index.html">Студия</a>
                 </li>
-                <li class="item site-nav__item mobile-menu__item-site">
-                    <a class="link site-nav__link mobile-menu__link-site" href="./portfolio.html">Портфолио</a>
+                <li class="item mobile-menu__item-site">
+                    <a class="link  mobile-menu__link-site" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="item site-nav__item mobile-menu__item-site">
-                    <a class="link site-nav__link mobile-menu__link-site" href="">Контакты</a>
+                <li class="item mobile-menu__item-site">
+                    <a class="link mobile-menu__link-site" href="">Контакты</a>
                 </li>
             </ul> 
+</div>
 
-            <ul class="list auth-nav auth-nav--list mobile-menu__list-auth">
-            <li class="item auth-nav__item mobile-menu__item-auth"><a class="link auth-nav__link mobile-menu__link-auth" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="item auth-nav__item mobile-menu__item-auth"><a class="link auth-nav__link mobile-menu__link-auth" href="tel:+380961111111">+38 096 111 11 11</a></li>
+<div class="mobile-menu__auth-box">
+            <ul class="list mobile-menu__list-auth">
+            <li class="item mobile-menu__item-auth "><a class="link mobile-menu__link-auth mobile-menu__link-auth--accent" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="item mobile-menu__item-auth"><a class="link mobile-menu__link-auth" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         </ul>
+</div>
 
-            <ul class="social list social--list mobile-menu__social">
-                        <li class="social__item item"><a class="social__link" href="">Instagram</a></li>
-                        <li class="social__item item"><a class="social__link" href="">Twitter</a></li>
-                        <li class="social__item item"><a class="social__link" href="">Facebook</a></li>
-                        <li class="social__item item"><a class="social__link" href="">LinkedIn</a></li>
+<div class="mobile-menu__social-box">
+
+            <ul class="list mobile-social">
+                        <li class="mobile-social__item item"><a class="mobile-social__link link" href="">Instagram</a></li>
+                        <li class="mobile-social__item item"><a class="mobile-social__link link" href="">Twitter</a></li>
+                        <li class="mobile-social__item item"><a class="mobile-social__link link" href="">Facebook</a></li>
+                        <li class="mobile-social__item item"><a class="mobile-social__link link" href="">LinkedIn</a></li>
                     </ul>
+            </div>
+            </div>
             </div>
     <main>
             <section class="hero overlay hero--center">
@@ -400,5 +408,6 @@
         </div>
     </footer>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
             </body>
 </html>

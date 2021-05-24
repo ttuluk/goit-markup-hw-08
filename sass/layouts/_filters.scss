@@ -1,10 +1,15 @@
 .filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: no-wrap;
+  }
 }
 
 .filter__item {

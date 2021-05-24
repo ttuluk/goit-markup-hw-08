@@ -1,9 +1,18 @@
 .overlay {
-  background-image: url(../images/background/img-overlay.png),
-    url(../images/background/background.jpg);
+  background-image: url(../images/desktop/hero-background/img-overlay.png),
+    url(../images/desktop/hero-background/hero.jpg);
   max-width: 1600px;
   min-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../images/desktop/hero-background/img-overlay.png),
+      url(../images/desktop/hero-background/hero@2x.jpg);
+  }
 }

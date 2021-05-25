@@ -1,5 +1,5 @@
 .site-nav {
-  display: inline-flex;
+  display: none;
   align-items: center;
 
   color: var(--title-text-color);
@@ -11,6 +11,9 @@
 
   @media screen and (min-width: 480px) and (max-width: 767.99px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
   }
 }
 

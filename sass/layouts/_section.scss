@@ -10,11 +10,9 @@
 
 .section--no-padding {
   padding-top: 0;
+  display: none;
 
-  @media screen and (min-width: 480px) and (max-width: 767.99px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
-    display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }

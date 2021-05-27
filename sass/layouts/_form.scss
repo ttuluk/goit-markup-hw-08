@@ -6,8 +6,7 @@
 .form__group {
   display: flex;
   flex-direction: column;
-
-  width: 448px;
+  max-width: 448px;
 }
 
 .form__title {
@@ -45,7 +44,7 @@
 
 .form__coments {
   min-height: 120px;
-  width: 448px;
+  max-width: 448px;
   display: flex;
   padding: 16px;
   border: 1px solid var(--border-form-color);

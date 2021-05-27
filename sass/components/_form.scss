@@ -1,7 +1,10 @@
 .footer-form__mail-box {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  margin-top: 60px;
+
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.03em;
@@ -75,11 +78,9 @@
   width: 24px;
   height: 24px;
 
-  margin-left: 10px;
-
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 10px;
   transform: translateY(-50%);
 }
 

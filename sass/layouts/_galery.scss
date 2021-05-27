@@ -9,7 +9,11 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    display: flex;
     flex-basis: calc((100% - 2 * 15px) / 2);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -40,6 +44,10 @@
 .card--link {
   margin-top: 0;
   margin-bottom: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card__text {
@@ -51,6 +59,7 @@
   padding: 20px 24px;
   background-color: var(--primary-bg-color);
   z-index: 4;
+  flex-grow: 1;
 }
 
 .card__title {

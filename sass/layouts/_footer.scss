@@ -10,14 +10,12 @@
 
 .footer__box {
   display: flex;
-  align-items: baseline;
   flex-wrap: wrap;
-  align-items: center;
 
   @media screen and (min-width: 480px) and (max-width: 767.99px) {
     text-align: center;
     flex-direction: column;
-
+    align-items: center;
     max-width: 480px;
     max-height: 603px;
   }
@@ -56,6 +54,7 @@
   margin-right: auto;
 
   @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    margin-top: 0;
     margin-left: 165px;
   }
   @media screen and (min-width: 1200px) {
@@ -64,8 +63,6 @@
 }
 
 .footer-form__box {
-  margin-top: 60px;
-
   @media screen and (min-width: 480px) and (max-width: 767.99px) {
   }
 

@@ -13,10 +13,12 @@
   --border-icon-color: rgba(0, 0, 0, 0.1);
   --border-team-color: rgba(255, 255, 255, 1);
   --border-portfolio-color: rgba(238, 238, 238, 1);
+  --border-form-color: rgba(33, 33, 33, 0.2);
   --prime-card-swadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --secondary-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --border-modal: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --textarea-color: rgba(117, 117, 117, 0.5);
   --accent-button-color: #188ce8;
   --background-hero: rgba(47, 48, 58, 0.8);
   --icon-color: rgba(175, 177, 184, 1);
@@ -252,10 +254,17 @@ p {
   color: black;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   transition: color var(--animation);
+}
+
+@media screen and (min-width: 1200px) {
+  .link-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo--accent {
@@ -362,7 +371,8 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199.99px) {
   .auth-nav__item {
-    margin-top: 10px;
+    pading-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -557,6 +567,7 @@ p {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--prime-text-color);
 }
 
 .form__field {
@@ -567,7 +578,7 @@ p {
 .form__input {
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-form-color);
   border-radius: 4px;
   padding-left: 48px;
   transition: border var(--animation);
@@ -588,6 +599,9 @@ p {
   width: 448px;
   display: flex;
   padding: 16px;
+  border: 1px solid var(--border-form-color);
+  border-radius: 4px;
+  color: var(--textarea-color);
 }
 
 .form__icon {
@@ -626,6 +640,7 @@ p {
 
 .form__link {
   color: var(--accent-text-color);
+  text-decoration: underline;
 }
 
 .checkbox__icon {
@@ -649,6 +664,7 @@ p {
 }
 
 .checkbox {
+  text-align: center;
   appearance: none;
   background-color: var(--accent-text-color);
 }
@@ -1125,13 +1141,19 @@ p {
   margin-top: 0;
 }
 
-.contacts--address {
-  color: var(--secondary-text-color);
+.contacts__link {
+  color: var(--footer-text-color);
   transition: color var(--animation);
 }
 
-.contacts__link {
-  color: var(--primary-bg-color);
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    color: var(--primary-bg-color);
+  }
+}
+
+.contacts--address {
+  color: var(--secondary-text-color);
   transition: color var(--animation);
 }
 
@@ -1225,7 +1247,7 @@ p {
 .footer-form__send {
   width: 24px;
   height: 24px;
-  margin-right: 13px;
+  margin-left: 10px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1415,40 +1437,44 @@ p {
 }
 
 .footer__adress-box {
-  display: flex;
-  flex-direction: column;
-  width: 231px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.99px) {
-  .footer__social-box {
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .footer__adress-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 231px;
   }
 }
 
-@media screen and (min-width: 768px) {
+.footer__social-box {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
   .footer__social-box {
     margin-left: 165px;
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1199.99px) {
+@media screen and (min-width: 1200px) {
   .footer__social-box {
     margin-left: 70px;
   }
 }
 
 .footer-form__box {
-  display: flex;
   margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.99px) {
   .footer-form__box {
-    display: block;
-    text-align: center;
     margin-top: 0;
   }
 }

@@ -18,6 +18,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--prime-text-color);
 }
 .form__field {
   position: relative;
@@ -27,7 +28,7 @@
 .form__input {
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-form-color);
   border-radius: 4px;
   padding-left: 48px;
   transition: border var(--animation);
@@ -47,6 +48,9 @@
   width: 448px;
   display: flex;
   padding: 16px;
+  border: 1px solid var(--border-form-color);
+  border-radius: 4px;
+  color: var(--textarea-color);
 }
 .form__icon {
   position: absolute;
@@ -84,6 +88,7 @@
 
 .form__link {
   color: var(--accent-text-color);
+  text-decoration: underline;
 }
 
 .checkbox__icon {
@@ -106,11 +111,12 @@
 }
 
 .checkbox {
+  text-align: center;
   appearance: none;
   background-color: var(--accent-text-color);
 
-&:checked ~ .checkbox__icon {
-  background-color: var(--accent-text-color);
-  border: none;
-}
+  &:checked ~ .checkbox__icon {
+    background-color: var(--accent-text-color);
+    border: none;
+  }
 }

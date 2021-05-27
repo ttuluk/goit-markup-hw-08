@@ -24,6 +24,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     text-align: center;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
     flex-basis: calc((100% - 30px * 2) / 2);
   }

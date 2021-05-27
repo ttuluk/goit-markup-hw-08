@@ -34,6 +34,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 body {
@@ -432,7 +433,18 @@ p {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 696px;
+}
+
+@media screen and (min-width: 478px) {
+  .hero__container {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    width: 696px;
+  }
 }
 
 .hero--center {
@@ -679,18 +691,42 @@ p {
 }
 
 .hero__title {
-  display: inline-block;
+  display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  color: var(--secondary-text-color);
+  padding-left: 15px;
+  padding-right: 15px;
   font-style: 400;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1200px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .section__title {
@@ -1443,6 +1479,7 @@ p {
   .footer__box {
     text-align: center;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
     flex-basis: calc((100% - 30px * 2) / 2);
   }

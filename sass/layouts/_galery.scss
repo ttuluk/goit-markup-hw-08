@@ -76,6 +76,7 @@
 .card__image-box {
   position: relative;
   top: 0;
+  width: 100%;
 }
 
 .card__overlay {
@@ -88,13 +89,15 @@
   visibility: hidden;
   overlay: 0;
   transform: translateY(0);
-  transition: transform 500ms linear, overlay 500ms linear;
+  transition: transform var(--animation), overlay var(--animation);
 
   .card:hover &,
   .card:focus & {
     overlay: 1;
     visibility: visible;
+
     transform: translateY(-100%);
+    transition: transform var(--animation), overlay var(--animation);
   }
 }
 

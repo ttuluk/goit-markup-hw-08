@@ -1069,6 +1069,7 @@ p {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: 100%;
+  justify-content: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -1425,6 +1426,7 @@ p {
 .footer__box {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767.99px) {
@@ -1487,6 +1489,11 @@ p {
   .footer__social-box {
     margin-left: 70px;
   }
+}
+
+.footer-form {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.99px) {

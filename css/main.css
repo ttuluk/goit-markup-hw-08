@@ -202,7 +202,7 @@ p {
 }
 
 .mobile-btn {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 10px;
   width: 40px;
@@ -740,8 +740,9 @@ p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: var(--title-text-color);
+  margin-top: 30px;
   width: 270px;
+  color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -752,8 +753,6 @@ p {
 
 @media screen and (min-width: 1200px) {
   .features__title {
-    margin-top: 0;
-    margin-top: 30px;
     text-align: start;
   }
 }
@@ -883,7 +882,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
@@ -1001,6 +1000,11 @@ p {
 
 .team__card {
   padding: 30px;
+}
+
+.team__image {
+  width: 100%;
+  height: 100%;
 }
 
 .team__title {

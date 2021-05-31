@@ -870,8 +870,15 @@ p {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-top: -15px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card-set {
+    margin-left: -15px;
+    margin-top: -15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -885,8 +892,6 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767.99px) {
@@ -897,12 +902,16 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199.99px) {
   .features__item {
-    width: calc((100% - 2 * 30px) / 2);
+    margin-left: 15px;
+    margin-top: 15px;
+    width: calc((100% - 2 * 15px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features__item {
+    margin-left: 30px;
+    margin-top: 30px;
     width: calc((100% - 4 * 30px) / 4);
   }
 }
@@ -1119,8 +1128,14 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.99px) {
+  .clients {
+    margin-top: -30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

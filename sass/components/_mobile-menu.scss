@@ -55,6 +55,9 @@
 .mobile-menu__item-auth:last-child {
   margin-top: 32px;
 }
+.mobile-menu__link-site {
+  color: var(--title-text-color);
+}
 .mobile-menu__link-auth--accent {
   color: var(--accent-text-color);
 

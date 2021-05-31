@@ -370,9 +370,8 @@ p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.99px) {
-  .auth-nav__item {
-    pading-top: 10px;
-    padding-bottom: 10px;
+  .auth-nav__item:first-child {
+    margin-bottom: 10px;
   }
 }
 
@@ -385,13 +384,31 @@ p {
 .auth-nav__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.99px) {
   .auth-nav__link {
-    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  .auth-nav--email {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  .auth-nav--tel {
+    padding-top: 0;
   }
 }
 

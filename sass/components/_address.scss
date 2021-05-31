@@ -16,10 +16,6 @@
 .contacts__link {
   color: var(--footer-text-color);
   transition: color var(--animation);
-
-  @media screen and (min-width: 1200px) {
-    color: var(--primary-bg-color);
-  }
 }
 
 .contacts--address {
